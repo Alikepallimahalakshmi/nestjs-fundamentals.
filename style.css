@@ -1,0 +1,135 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body{
+  background:#eeeeee;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+}
+
+.logo{
+  font-weight:700;
+  font-size:22px;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:30px;
+  font-size:14px;
+}
+
+.buy-top{
+  padding:8px 16px;
+  border-radius:25px;
+  border:none;
+  background:black;
+  color:white;
+  font-size:12px;
+}
+
+/* ---------------- HERO / MAIN BOX ---------------- */
+
+.hero{
+  width:85%;
+  margin:20px auto;
+  background:linear-gradient(145deg,#f97316,#f9a858);
+  padding:70px;
+  border-radius:10px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:relative;
+}
+
+/* LEFT TEXT */
+
+.text{
+  width:50%;
+  color:white;
+}
+
+.text h1{
+  font-size:34px;
+  line-height:1.3;
+}
+
+.text p{
+  margin-top:12px;
+}
+
+.cta{
+  margin-top:22px;
+  padding:12px 24px;
+  background:black;
+  color:white;
+  border-radius:25px;
+  border:none;
+}
+
+/* RIGHT IMAGE PART */
+
+.image-box{
+  width:40%;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* diamond clip-path */
+
+.diamond{
+  width:330px;
+  height:330px;
+  object-fit:cover;
+
+  clip-path:polygon(50% 0%,100% 50%,50% 100%,0 50%);
+  border:12px solid white;
+}
+
+/* Buy Now bubble */
+
+.small-buy{
+  position:absolute;
+  top:-20px;
+  right:0;
+    background:black;
+  color:white;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:900px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .text,.image-box{
+    width:100%;
+  }
+
+  .diamond{
+    margin-top:25px;
+  }
+}
+
